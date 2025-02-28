@@ -73,3 +73,40 @@ The dataset contains **11 labeled classes**. Since the class counts vary signifi
 Below, you can see the **exact number of points** in each class.
 
 ![Class Distribution (Log Scale)](Data_Info/class_distribution_log_labeled.png)
+
+
+# 📌 Citation and Related Works for SemanticRail3D Dataset
+If you use the SemanticRail3D dataset in your research, please cite it as follows:
+
+# 📌 Citation
+The SemanticRail3D dataset is published on Zenodo and can be cited using the following DOI:
+
+🔗 10.5281/zenodo.11143766
+
+```plaintext
+@dataset{SemanticRail3D,
+  author = {[Author Names]},
+  title = {SemanticRail3D: A Benchmark Dataset for Railway Infrastructure Segmentation},
+  year = {2024},
+  version = {v0},
+  doi = {10.5281/zenodo.11143766},
+  publisher = {Zenodo}
+}
+
+```
+----------------------
+
+# 📌 Related Works
+The SemanticRail3D dataset is derived from and referenced by the following journal articles:
+
+# 📌 Derived From
+📄 Journal Article:
+Remote Sensing, DOI: 10.3390/rs13122332
+Title: Railway Infrastructure Inspection Using Mobile LiDAR and Deep Learning Models
+
+# 📌 Referenced By
+📄 Journal Article:
+Automation in Construction, DOI: 10.1016/j.autcon.2023.104854
+Title: Machine Learning-Based Automated Processing of Railway Point Clouds
+
+
