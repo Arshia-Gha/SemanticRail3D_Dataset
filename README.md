@@ -64,6 +64,6 @@ Below is the dataset distribution after preprocessing and splitting:
 📈 Interactive Chart
 For a detailed interactive version, click the link below:
 
-📈 **[View Interactive Chart](Data_Info/dataset_distribution.html)**
+📈 **[View Interactive Chart](Data_Info/dataset_distribution.svg)**
 
 📊 View Interactive Chart
