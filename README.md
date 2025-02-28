@@ -44,11 +44,26 @@ Scan Angle: The inclination angle of the LiDAR sensor when capturing the point.
 ## 📂 Dataset Splits
 
 - 📝 **[Train Cloud Segments](Data_Info/train_clouds.txt)** → Clouds and their respective segment numbers.
-- 
+  
 - 📝 **[Validation Cloud Segments](Data_Info/val_clouds.txt)** → Clouds and their respective segment numbers.
-- 
+  
 - 📝 **[Test Cloud Segments](Data_Info/test_clouds.txt)** → Clouds and their respective segment numbers.
-- 
+  
 - 🗑 **[Removed Cloud Segments](Data_Info/removed_clouds.txt)** → List of removed clouds with missing segments.
-- 
+  
+📊 Dataset Distribution
+The dataset consists of 437 point clouds, each divided into 5 segments, totaling 2,185 segments.
+Some segments were removed due to issues such as mislabeling, errors in labels, or incorrect class assignments.
+The remaining data was split into Train, Validation, and Test sets to be used for machine learning approaches.
 
+📌 Static Chart
+Below is the dataset distribution after preprocessing and splitting:
+
+![Dataset Distribution](Data_Info/dataset_distribution.png)
+
+📈 Interactive Chart
+For a detailed interactive version, click the link below:
+
+📈 **[View Interactive Chart](Data_Info/dataset_distribution.html)**
+
+📊 View Interactive Chart
