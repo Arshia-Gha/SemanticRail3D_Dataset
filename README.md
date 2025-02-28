@@ -3,8 +3,11 @@ This repository contains the SemanticRail3D dataset, a high-quality 3D point clo
 
 # 🔹 Key Features:
 ✔ High-resolution LiDAR data (980 points/m², 5mm precision)
+
 ✔ Semantic segmentation (11 classes) & instance segmentation
+
 ✔ Preprocessed with normal vectors, intensity, and additional features
+
 ✔ Structured in NumPy format for easy loading
 
 🚀 Use this dataset for developing AI models in railway point cloud analysis! 🚀
