@@ -1,2 +1,29 @@
 # SemanticRail3D_Dataset
 This repository contains the SemanticRail3D dataset, a high-quality 3D point cloud dataset for railway infrastructure segmentation and classification. It consists of 438 point clouds, each covering 200 meters of track, totaling 2.8 billion points labeled into 11 semantic classes.
+
+## Introduction
+
+The segmentation and classification of 3D point clouds in railway infrastructures present significant challenges in both scientific research and technological applications. One major difficulty is the limited availability of large, high-quality datasets that enable the training of AI models for point cloud segmentation and classification. Furthermore, the field lacks benchmarks that allow for objective comparison of different approaches, making it difficult to track progress and develop improved solutions.
+
+The SemanticRail3D dataset aims to bridge this gap by offering a comprehensive benchmark for the scientific community. This dataset provides detailed 3D point cloud labels of railway environments, facilitating the development and evaluation of segmentation and classification models. With this dataset, researchers now have a common reference for comparing results, improving methodologies, and advancing state-of-the-art machine learning techniques for railway infrastructure analysis.
+
+## Dataset Overview
+The SemanticRail3D dataset consists of 438 point clouds, each covering approximately 200 meters of railway track. The dataset contains a total of 2.8 billion points, with 11 different classes labeled for semantic segmentation. Additionally, track position for each railway line is provided, along with instance segmentation to distinguish between different objects in the scene.
+
+ ## Data Acquisition
+The dataset was collected using a LYNX Mobile Mapper by Optech, which employs two LiDAR sensors mounted on a Mobile Mapping System (MMS). The average point cloud density is 980 points/m², with a range precision of 5 mm, ensuring high-quality spatial representation.
+
+## Data Attributes
+Each point cloud includes the following attributes:
+
+XYZ Coordinates: Provided in a local coordinate system, ensuring positive values (minimum coordinate value is 0).
+
+Intensity: Encoded in 12-bit format (0-4096), indicating surface reflectivity.
+
+Time Stamp: Time at which each point was captured.
+
+Return Number: Identifies whether the point corresponds to the first, second, third, etc., return of a LiDAR pulse.
+
+Number of Returns: Specifies the total number of returns detected from a single laser pulse.
+
+Scan Angle: The inclination angle of the LiDAR sensor when capturing the point.
