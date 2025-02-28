@@ -1,5 +1,15 @@
-# SemanticRail3D_Dataset
-This repository contains the SemanticRail3D dataset, a high-quality 3D point cloud dataset for railway infrastructure segmentation and classification. It consists of 438 point clouds, each covering 200 meters of track, totaling 2.8 billion points labeled into 11 semantic classes.
+# 📌 SemanticRail3D_Dataset
+This repository contains the SemanticRail3D dataset, a high-quality 3D point cloud dataset for railway infrastructure segmentation and classification. It consists of 438 point clouds, each covering 200 meters of track, totaling 2.8 billion points labeled into 11 semantic classes. The dataset is structured for machine learning applications, with train, validation, and test splits.
+
+# 🔹 Key Features:
+✔ High-resolution LiDAR data (980 points/m², 5mm precision)
+✔ Semantic segmentation (11 classes) & instance segmentation
+✔ Preprocessed with normal vectors, intensity, and additional features
+✔ Structured in NumPy format for easy loading
+
+🚀 Use this dataset for developing AI models in railway point cloud analysis! 🚀
+
+
 
 ## Introduction
 
