@@ -92,7 +92,6 @@ The SemanticRail3D dataset is published on Zenodo and can be cited using the fol
   doi = {10.5281/zenodo.11143766},
   publisher = {Zenodo}
 }
-
 ```
 ----------------------
 
