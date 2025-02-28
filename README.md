@@ -95,7 +95,8 @@ SemanticRail3D/
                 │   ├── cloudXXX_SegY/
                 │   ├── ...
 
-
+```
+______________________________________________________
 ## 📌 Semantic Class Distribution (Log Scale)
 
 The dataset contains **11 labeled classes**. Since the class counts vary significantly, we use a **log scale** for better visualization.  
