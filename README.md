@@ -64,6 +64,12 @@ Below is the dataset distribution after preprocessing and splitting:
 📈 Interactive Chart
 For a detailed interactive version, click the link below:
 
-📈 **[View Interactive Chart](Data_Info/dataset_distribution.svg)**
+📊 **[View Interactive Chart](Data_Info/dataset_distribution.svg)**
 
-📊 View Interactive Chart
+
+## 📌 Semantic Class Distribution (Log Scale)
+
+The dataset contains **11 labeled classes**. Since the class counts vary significantly, we use a **log scale** for better visualization.  
+Below, you can see the **exact number of points** in each class.
+
+![Class Distribution (Log Scale)](Data_Info/class_distribution_log_labeled.png)
