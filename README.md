@@ -45,10 +45,10 @@ Scan Angle: The inclination angle of the LiDAR sensor when capturing the point.
 
 - 📝 **[Train Cloud Segments](Data_Info/train_clouds.txt)** → Clouds and their respective segment numbers.
 - 
-- 📝 **[Validation Cloud Segments](val_clouds.txt)** → Clouds and their respective segment numbers.
+- 📝 **[Validation Cloud Segments](Data_Info/val_clouds.txt)** → Clouds and their respective segment numbers.
 - 
-- 📝 **[Test Cloud Segments](test_clouds.txt)** → Clouds and their respective segment numbers.
+- 📝 **[Test Cloud Segments](Data_Info/test_clouds.txt)** → Clouds and their respective segment numbers.
 - 
-- 🗑 **[Removed Cloud Segments](removed_clouds.txt)** → List of removed clouds with missing segments.
+- 🗑 **[Removed Cloud Segments](Data_Info/removed_clouds.txt)** → List of removed clouds with missing segments.
 - 
 
