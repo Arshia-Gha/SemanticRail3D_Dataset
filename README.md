@@ -159,11 +159,11 @@ If you use the SemanticRail3D dataset in your research, please cite it as follow
 ### 📌 Citation
 The SemanticRail3D dataset is published on Zenodo and can be cited using the following DOI:
 
-🔗 [https://doi.org/10.5281/zenodo.11143767] (https://doi.org/10.5281/zenodo.11143767)
+🔗 [https://doi.org/10.5281/zenodo.11143767]
 
 The SemanticRail3D-V2 dataset is published on Zenodo and can be cited using the following DOI:
 
-🔗 [https://doi.org/10.5281/zenodo.15641832] (https://doi.org/10.5281/zenodo.15641832)
+🔗 [https://doi.org/10.5281/zenodo.15641832]
 
 ```plaintext
 @dataset{SemanticRail3D,
