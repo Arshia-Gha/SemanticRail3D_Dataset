@@ -68,7 +68,7 @@ instance_id (instance segmentation label)
 
 The dataset is organized as follows:
 ```plaintext
-SemanticRail3D/
+SemanticRail3D-V2/
                 ├── train_part1/
                 │   ├── cloudXXX_SegY.laz
                 │   ├── cloudXXX_SegY.laz
