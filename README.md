@@ -72,15 +72,8 @@ The dataset is organized as follows:
 ```plaintext
 SemanticRail3D/
                 ├── train_part1/
-                │   ├── cloudXXX_SegY/
-                │   │   ├── coord.npy
-                │   │   ├── intensity.npy
-                │   │   ├── normal.npy
-                │   │   ├── feature.npy
-                │   │   ├── color.npy
-                │   │   ├── instance.npy
-                │   │   ├── segment.npy
-                │   ├── cloudXXX_SegY/
+                │   ├── cloudXXX_SegY.laz
+                │   ├── cloudXXX_SegY.laz
                 │   ├── ...
                 ├── train_part2/
                 ├── train_part3/
@@ -88,14 +81,25 @@ SemanticRail3D/
                 ├── train_part5/
                 │
                 ├── Validation/
-                │   ├── cloudXXX_SegY/
+                │   ├── cloudXXX_SegY.laz
                 │   ├── ...
                 │
                 ├── Test/
-                │   ├── cloudXXX_SegY/
+                │   ├── cloudXXX_SegY.laz
                 │   ├── ...
-
 ```
+
+______________________________________________________
+📌 Available Attributes per Point in .laz Files
+Each .laz file contains the following attributes for every point:
+
+x, y, z: 3D spatial coordinates
+
+intensity: Return intensity from LiDAR sensor
+
+class: Semantic segmentation label (integer ID of the object class)
+
+instance_id: Instance segmentation label (ID representing individual object instances)
 ______________________________________________________
 ## 📌 Semantic Class Distribution (Log Scale)
 
