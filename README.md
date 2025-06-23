@@ -1,5 +1,5 @@
 # 📌 SemanticRail3D_Dataset
-This repository contains the SemanticRail3D dataset, a high-quality 3D point cloud dataset for railway infrastructuresemantic and instance segmentation. It consists of 438 point clouds, each covering 200 meters of track, totaling 2.8 billion points labeled into 11 semantic classes. The dataset is structured for machine learning applications, with train, validation, and test splits.
+This repository contains the SemanticRail3D dataset, a high-quality 3D point cloud dataset for railway infrastructure semantic and instance segmentation. It consists of 438 point clouds, each covering 200 meters of track, totaling 2.8 billion points labeled into 11 semantic classes. The dataset is structured for machine learning applications, with train, validation, and test splits.
 
 ## ✨ Key Features
 
@@ -159,18 +159,22 @@ If you use the SemanticRail3D dataset in your research, please cite it as follow
 ### 📌 Citation
 The SemanticRail3D dataset is published on Zenodo and can be cited using the following DOI:
 
-🔗 [https://doi.org/10.5281/zenodo.11143767]
+🔗 [https://doi.org/10.5281/zenodo.11143766]
+
+This doi will always resolve to the latest version of the dataset. If you want to cite a specific version:
+
+🔗 [https://doi.org/10.5281/zenodo.11143767] SemanticRail3D-v1
 
 The SemanticRail3D-V2 dataset is published on Zenodo and can be cited using the following DOI:
 
-🔗 [https://doi.org/10.5281/zenodo.15641832]
+🔗 [https://doi.org/10.5281/zenodo.15641832] SemanticRail3D-v2
 
 ```plaintext
 @dataset{SemanticRail3D,
-  author = {[Author Names]},
+  author = {[Soilán, Mario and Ghasemlou, Arshia and Martínez-Sánchez, Joaquín and Pedro, Arias and Lorenzo, Henrique and Riveiro, Belén]},
   title = {SemanticRail3D: A Benchmark Dataset for Railway Infrastructure Segmentation},
-  year = {2024},
-  version = {v0},
+  year = {2025},
+  version = {v2},
   doi = {10.5281/zenodo.11143766},
   publisher = {Zenodo}
 }
