@@ -1,14 +1,10 @@
 # 📌 SemanticRail3D_Dataset
-This repository contains the SemanticRail3D dataset, a high-quality 3D point cloud dataset for railway infrastructure segmentation and classification. It consists of 438 point clouds, each covering 200 meters of track, totaling 2.8 billion points labeled into 11 semantic classes. The dataset is structured for machine learning applications, with train, validation, and test splits.
+This repository contains the SemanticRail3D dataset, a high-quality 3D point cloud dataset for railway infrastructuresemantic and instance segmentation. It consists of 438 point clouds, each covering 200 meters of track, totaling 2.8 billion points labeled into 11 semantic classes. The dataset is structured for machine learning applications, with train, validation, and test splits.
 
 # 🔹 Key Features:
 ✔ High-resolution LiDAR data (980 points/m², 5mm precision)
 
 ✔ Semantic segmentation (11 classes) & instance segmentation
-
-✔ Preprocessed with normal vectors, intensity, and additional features
-
-✔ Structured in NumPy format for easy loading
 
 🚀 Use this dataset for developing AI models in railway point cloud analysis! 🚀
 
@@ -41,6 +37,60 @@ Number of Returns: Specifies the total number of returns detected from a single 
 
 Scan Angle: The inclination angle of the LiDAR sensor when capturing the point.
 
+
+📦 SemanticRail3D V2: Preprocessed ML-Ready Version
+To further support the machine learning community, we introduce SemanticRail3D V2 — a preprocessed and validated version of the original dataset, optimized for deep learning tasks.
+
+✅ Key Improvements in V2:
+Segmented structure: Each 200-meter point cloud is divided into 5 spatial sections, facilitating localized analysis and model training.
+
+Validation & cleaning: All point clouds were manually validated to detect labeling or scanning errors. Corrupted segments were removed to ensure data quality.
+
+Structured splitting: The cleaned dataset was split into:
+
+5 training shards (train_part1 to train_part5)
+
+1 validation set (Validation/)
+
+1 test set (Test/)
+
+Efficient storage: All point clouds are stored in .laz format, including the following point-wise attributes:
+
+x, y, z (coordinates)
+
+intensity (LiDAR return)
+
+class (semantic segmentation label)
+
+instance_id (instance segmentation label)
+
+# 📂 Dataset Structure
+
+The dataset is organized as follows:
+```plaintext
+SemanticRail3D/
+                ├── train_part1/
+                │   ├── cloudXXX_SegY.laz
+                │   ├── cloudXXX_SegY.laz
+                │   ├── ...
+                ├── train_part2/
+                ├── train_part3/
+                ├── train_part4/
+                ├── train_part5/
+                │
+                ├── Validation/
+                │   ├── cloudXXX_SegY.laz
+                │   ├── ...
+                │
+                ├── Test/
+                │   ├── cloudXXX_SegY.laz
+                │   ├── ...
+```
+This tailored version ensures consistency, robustness, and compatibility with point cloud learning frameworks. It is ideal for benchmarking semantic and instance segmentation models in large-scale railway environments.
+
+
+
+
 ## 📂 Dataset Splits
 
 - 📝 **[Train Cloud Segments](Data_Info/train_clouds.txt)** → Clouds and their respective segment numbers.
@@ -66,28 +116,7 @@ For a detailed interactive version, click the link below:
 
 📊 **[View Interactive Chart](Data_Info/dataset_distribution.svg)**
 
-# 📂 Dataset Structure
 
-The dataset is organized as follows:
-```plaintext
-SemanticRail3D/
-                ├── train_part1/
-                │   ├── cloudXXX_SegY.laz
-                │   ├── cloudXXX_SegY.laz
-                │   ├── ...
-                ├── train_part2/
-                ├── train_part3/
-                ├── train_part4/
-                ├── train_part5/
-                │
-                ├── Validation/
-                │   ├── cloudXXX_SegY.laz
-                │   ├── ...
-                │
-                ├── Test/
-                │   ├── cloudXXX_SegY.laz
-                │   ├── ...
-```
 
 ______________________________________________________
 📌 Available Attributes per Point in .laz Files
@@ -116,6 +145,10 @@ If you use the SemanticRail3D dataset in your research, please cite it as follow
 The SemanticRail3D dataset is published on Zenodo and can be cited using the following DOI:
 
 🔗 10.5281/zenodo.11143766
+
+The SemanticRail3D-V2 dataset is published on Zenodo and can be cited using the following DOI:
+
+🔗 10.5281/zenodo.15641832
 
 ```plaintext
 @dataset{SemanticRail3D,
