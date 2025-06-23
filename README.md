@@ -1,70 +1,80 @@
 # 📌 SemanticRail3D_Dataset
 This repository contains the SemanticRail3D dataset, a high-quality 3D point cloud dataset for railway infrastructuresemantic and instance segmentation. It consists of 438 point clouds, each covering 200 meters of track, totaling 2.8 billion points labeled into 11 semantic classes. The dataset is structured for machine learning applications, with train, validation, and test splits.
 
-# 🔹 Key Features:
-✔ High-resolution LiDAR data (980 points/m², 5mm precision)
+## ✨ Key Features
 
-✔ Semantic segmentation (11 classes) & instance segmentation
+- ✔️ **High-resolution LiDAR** (980 pts/m², 5 mm precision)  
+- 🧠 **Semantic segmentation** (11 classes) & **Instance segmentation**  
+- 📏 Track-position encoding  
+- 🧪 Validated for training deep learning models  
+- 🔧 Compatible with common point cloud processing libraries
+
 
 🚀 Use this dataset for developing AI models in railway point cloud analysis! 🚀
 
 
 
-## Introduction
+## 📖 Introduction
 
 The segmentation and classification of 3D point clouds in railway infrastructures present significant challenges in both scientific research and technological applications. One major difficulty is the limited availability of large, high-quality datasets that enable the training of AI models for point cloud segmentation and classification. Furthermore, the field lacks benchmarks that allow for objective comparison of different approaches, making it difficult to track progress and develop improved solutions.
 
 The SemanticRail3D dataset aims to bridge this gap by offering a comprehensive benchmark for the scientific community. This dataset provides detailed 3D point cloud labels of railway environments, facilitating the development and evaluation of segmentation and classification models. With this dataset, researchers now have a common reference for comparing results, improving methodologies, and advancing state-of-the-art machine learning techniques for railway infrastructure analysis.
 
-## Dataset Overview
-The SemanticRail3D dataset consists of 438 point clouds, each covering approximately 200 meters of railway track. The dataset contains a total of 2.8 billion points, with 11 different classes labeled for semantic segmentation. Additionally, track position for each railway line is provided, along with instance segmentation to distinguish between different objects in the scene.
+
+## 📊 Dataset Overview
+
+- **438** point clouds (200 m each)  
+- **2.8 billion** total points  
+- **11 semantic classes**  
+- Includes **instance segmentation** and **track position labels**
+
+---
 
  ## Data Acquisition
 The dataset was collected using a LYNX Mobile Mapper by Optech, which employs two LiDAR sensors mounted on a Mobile Mapping System (MMS). The average point cloud density is 980 points/m², with a range precision of 5 mm, ensuring high-quality spatial representation.
 
-## Data Attributes
-Each point cloud includes the following attributes:
 
-XYZ Coordinates: Provided in a local coordinate system, ensuring positive values (minimum coordinate value is 0).
+## 🧬 Data Attributes
 
-Intensity: Encoded in 12-bit format (0-4096), indicating surface reflectivity.
+Each point includes the following attributes:
 
-Time Stamp: Time at which each point was captured.
+- 📌 `x`, `y`, `z`: Local 3D coordinates (positive-only)  
+- 💡 `intensity`: Reflectivity (12-bit, 0–4096)  
+- 🕒 `timestamp`: Time of capture  
+- 🔁 `return_number`: Order of return (1st, 2nd, etc.)  
+- 📶 `num_returns`: Total returns from a pulse  
+- 🎯 `scan_angle`: Inclination of the laser at capture
 
-Return Number: Identifies whether the point corresponds to the first, second, third, etc., return of a LiDAR pulse.
-
-Number of Returns: Specifies the total number of returns detected from a single laser pulse.
-
-Scan Angle: The inclination angle of the LiDAR sensor when capturing the point.
-
+---
 
 # 📦 SemanticRail3D V2: Preprocessed ML-Ready Version
 To further support the machine learning community, we introduce SemanticRail3D V2 — a preprocessed and validated version of the original dataset, optimized for deep learning tasks.
 
-✅ Key Improvements in V2:
-Segmented structure: Each 200-meter point cloud is divided into 5 spatial sections, facilitating localized analysis and model training.
+### ✅ V2 Enhancements:
 
-Validation & cleaning: All point clouds were validated to detect labeling or scanning errors. Corrupted segments were removed to ensure data quality.
+- 🔹 **Segmented**: Each 200 m cloud is divided into **5 spatial segments**  
+- 🔍 **Validated**: Manual inspection and removal of erroneous segments  
+- 🧹 **Cleaned**: Noise reduction and consistent labeling  
+- 📁 **Structured Splits**:
+  - `train_part1` to `train_part5`  
+  - `Validation/`  
+  - `Test/`  
+- 💾 **Efficient `.laz` storage** with:
+  - `x, y, z` coordinates  
+  - `intensity`  
+  - `class` (semantic label)  
+  - `instance_id` (instance label)
 
-Structured splitting: The cleaned dataset was split into:
+### 🔤 File Naming Convention
 
-5 training shards (train_part1 to train_part5)
+Each file is named `cloudX_SegY.laz`, where:
 
-1 validation set (Validation)
+- `X` ∈ [0, 437] → 200m point cloud ID  
+- `Y` ∈ [1, 5] → Segment index within the point cloud
 
-1 test set (Test)
+---
 
-Efficient storage: All point clouds are stored in .laz format, including the following point-wise attributes:
-
-x, y, z (coordinates)
-
-intensity (LiDAR return)
-
-class (semantic segmentation label)
-
-instance_id (instance segmentation label)
-
-# 📂 Dataset Structure
+## 📂 Dataset Structure
 
 The dataset is organized as follows:
 ```plaintext
@@ -99,13 +109,13 @@ This structured naming makes it easy to trace each segment back to its original 
 
 ## 📂 Dataset Splits
 
-- 📝 **[Train Cloud Segments](Data_Info/train_clouds.txt)** → Clouds and their respective segment numbers.
+- 🧪 **[Train Cloud Segments](Data_Info/train_clouds.txt)** → Clouds and their respective segment numbers.
   
-- 📝 **[Validation Cloud Segments](Data_Info/val_clouds.txt)** → Clouds and their respective segment numbers.
+- ✅ **[Validation Cloud Segments](Data_Info/val_clouds.txt)** → Clouds and their respective segment numbers.
   
-- 📝 **[Test Cloud Segments](Data_Info/test_clouds.txt)** → Clouds and their respective segment numbers.
+- 🔬 **[Test Cloud Segments](Data_Info/test_clouds.txt)** → Clouds and their respective segment numbers.
   
-- 🗑 **[Removed Cloud Segments](Data_Info/removed_clouds.txt)** → List of removed clouds with missing segments.
+- 🗑️ **[Removed Cloud Segments](Data_Info/removed_clouds.txt)** → List of removed clouds with missing segments.
   
 📊 Dataset Distribution
 The dataset consists of 437 point clouds, each divided into 5 segments, totaling 2,185 segments.
@@ -126,15 +136,14 @@ For a detailed interactive version, click the link below:
 
 ______________________________________________________
 📌 Available Attributes per Point in .laz Files
-Each .laz file contains the following attributes for every point:
 
-x, y, z: 3D spatial coordinates
+Each `.laz` file contains the following point-wise attributes:
 
-intensity: Return intensity from LiDAR sensor
+- 📍 `x`, `y`, `z`: 3D coordinates  
+- 💡 `intensity`: LiDAR reflectance  
+- 🏷️ `class`: Semantic label (0–10)  
+- 🔢 `instance_id`: Unique instance identifier
 
-class: Semantic segmentation label (integer ID of the object class)
-
-instance_id: Instance segmentation label (ID representing individual object instances)
 ______________________________________________________
 ## 📌 Semantic Class Distribution (Log Scale)
 
