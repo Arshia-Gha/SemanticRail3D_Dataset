@@ -44,15 +44,15 @@ To further support the machine learning community, we introduce SemanticRail3D V
 ✅ Key Improvements in V2:
 Segmented structure: Each 200-meter point cloud is divided into 5 spatial sections, facilitating localized analysis and model training.
 
-Validation & cleaning: All point clouds were manually validated to detect labeling or scanning errors. Corrupted segments were removed to ensure data quality.
+Validation & cleaning: All point clouds were validated to detect labeling or scanning errors. Corrupted segments were removed to ensure data quality.
 
 Structured splitting: The cleaned dataset was split into:
 
 5 training shards (train_part1 to train_part5)
 
-1 validation set (Validation/)
+1 validation set (Validation)
 
-1 test set (Test/)
+1 test set (Test)
 
 Efficient storage: All point clouds are stored in .laz format, including the following point-wise attributes:
 
@@ -88,7 +88,13 @@ SemanticRail3D/
 ```
 This tailored version ensures consistency, robustness, and compatibility with point cloud learning frameworks. It is ideal for benchmarking semantic and instance segmentation models in large-scale railway environments.
 
+Each file in the dataset follows the naming pattern cloudX_SegY.laz, where:
 
+X ranges from 0 to 437, indicating the original 200-meter point cloud index
+
+Y ranges from 1 to 5, representing the spatial segment number within each 200-meter stretch
+
+This structured naming makes it easy to trace each segment back to its original scan while enabling fine-grained control during training, validation, and evaluation.
 
 
 ## 📂 Dataset Splits
