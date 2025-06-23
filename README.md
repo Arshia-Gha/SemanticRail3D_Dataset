@@ -90,9 +90,9 @@ This tailored version ensures consistency, robustness, and compatibility with po
 
 Each file in the dataset follows the naming pattern cloudX_SegY.laz, where:
 
-X ranges from 0 to 437, indicating the original 200-meter point cloud index
+✔ X ranges from 0 to 437, indicating the original 200-meter point cloud index
 
-Y ranges from 1 to 5, representing the spatial segment number within each 200-meter stretch
+✔ Y ranges from 1 to 5, representing the spatial segment number within each 200-meter stretch
 
 This structured naming makes it easy to trace each segment back to its original scan while enabling fine-grained control during training, validation, and evaluation.
 
