@@ -186,12 +186,12 @@ The SemanticRail3D dataset is derived from and referenced by the following journ
 
 ### 📌 Derived From
 📄 Journal Article:
-Remote Sensing, DOI: 10.3390/rs13122332
+Remote Sensing, [DOI: 10.3390/rs13122332](https://doi.org/10.3390/rs13122332)  
 Title: Railway Infrastructure Inspection Using Mobile LiDAR and Deep Learning Models
 
 ### 📌 Referenced By
 📄 Journal Article:
-Automation in Construction, DOI: 10.1016/j.autcon.2023.104854
+Automation in Construction, [DOI: 10.1016/j.autcon.2023.104854](https://doi.org/10.1016/j.autcon.2023.104854)
 Title: Machine Learning-Based Automated Processing of Railway Point Clouds
 
 
