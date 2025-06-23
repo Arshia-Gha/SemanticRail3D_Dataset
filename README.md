@@ -13,7 +13,7 @@ This repository contains the SemanticRail3D dataset, a high-quality 3D point clo
 🚀 Use this dataset for developing AI models in railway point cloud analysis! 🚀
 
 
-
+![SemanticRail3D Visualization](Data_Info/subplot_4panel.png)
 ## 📖 Introduction
 
 The segmentation and classification of 3D point clouds in railway infrastructures present significant challenges in both scientific research and technological applications. One major difficulty is the limited availability of large, high-quality datasets that enable the training of AI models for point cloud segmentation and classification. Furthermore, the field lacks benchmarks that allow for objective comparison of different approaches, making it difficult to track progress and develop improved solutions.
