@@ -1,10 +1,10 @@
 # 📌 SemanticRail3D_Dataset
-This repository contains the SemanticRail3D dataset, a high-quality 3D point cloud dataset for railway infrastructure semantic and instance segmentation. It consists of 438 point clouds, each covering 200 meters of track, totaling 2.8 billion points labeled into 11 semantic classes. The dataset is structured for machine learning applications, with train, validation, and test splits.
+This repository contains the SemanticRail3D dataset, a high-quality 3D point cloud dataset for railway infrastructure semantic and instance segmentation. It consists of 438 point clouds, each covering 200 meters of track, totaling 2.8 billion points labeled into 12 semantic classes. The dataset is structured for machine learning applications, with train, validation, and test splits.
 
 ## ✨ Key Features
 
 - ✔️ **High-resolution LiDAR** (980 pts/m², 5 mm precision)  
-- 🧠 **Semantic segmentation** (11 classes) & **Instance segmentation**  
+- 🧠 **Semantic segmentation** (12 classes) & **Instance segmentation**  
 - 📏 Track-position encoding  
 - 🧪 Validated for training deep learning models  
 - 🔧 Compatible with common point cloud processing libraries
@@ -25,7 +25,7 @@ The SemanticRail3D dataset addresses this gap by providing a comprehensive bench
 
 - **438** point clouds (200 m each)  
 - **2.8 billion** total points  
-- **11 semantic classes**  
+- **12 semantic classes**  
 - Includes **instance segmentation** and **track position labels**
 
 ---
@@ -147,7 +147,7 @@ Each `.laz` file contains the following point-wise attributes:
 ______________________________________________________
 ## 📌 Semantic Class Distribution (Log Scale)
 
-The dataset contains **11 labeled classes**. Since the class counts vary significantly, we use a **log scale** for better visualization.  
+The dataset contains **12 labeled classes**. Since the class counts vary significantly, we use a **log scale** for better visualization.  
 Below, you can see the **exact number of points** in each class.
 
 ![Class Distribution (Log Scale)](Data_Info/class_distribution_log_labeled.png)
