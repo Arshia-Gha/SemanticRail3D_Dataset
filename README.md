@@ -16,9 +16,9 @@ This repository contains the SemanticRail3D dataset, a high-quality 3D point clo
 ![SemanticRail3D Visualization](Data_Info/subplot_4panel.png)
 ## 📖 Introduction
 
-The segmentation and classification of 3D point clouds in railway infrastructures present significant challenges in both scientific research and technological applications. One major difficulty is the limited availability of large, high-quality datasets that enable the training of AI models for point cloud segmentation and classification. Furthermore, the field lacks benchmarks that allow for objective comparison of different approaches, making it difficult to track progress and develop improved solutions.
+The segmentation of 3D point clouds in railway infrastructures poses significant challenges in both scientific research and practical applications. A key limitation in advancing this field has been the lack of large-scale, high-quality datasets that support both semantic and instance segmentation—essential for training and benchmarking AI models with fine-grained spatial understanding. Moreover, the absence of standardized benchmarks hinders objective comparison across methodologies, limiting progress toward more robust and generalizable solutions.
 
-The SemanticRail3D dataset aims to bridge this gap by offering a comprehensive benchmark for the scientific community. This dataset provides detailed 3D point cloud labels of railway environments, facilitating the development and evaluation of segmentation and classification models. With this dataset, researchers now have a common reference for comparing results, improving methodologies, and advancing state-of-the-art machine learning techniques for railway infrastructure analysis.
+The SemanticRail3D dataset addresses this gap by providing a comprehensive benchmark specifically designed for both semantic and instance segmentation of railway scenes. It offers richly annotated 3D point clouds covering diverse railway environments, enabling the development, evaluation, and comparison of advanced segmentation models. By establishing a consistent reference standard, this dataset supports methodological innovation and accelerates progress in machine learning applications for railway infrastructure monitoring and analysis.
 
 
 ## 📊 Dataset Overview
