@@ -157,7 +157,11 @@ Below, you can see the **exact number of points** in each class.
 If you use the SemanticRail3D dataset in your research, please cite it as follows:
 
 ### 📌 Citation
-The SemanticRail3D dataset is published on Zenodo and can be cited using the following DOI:
+The SemanticRail3D dataset paper is published in Nature Scientific Data and can be cited using the following DOI:
+
+🔗 [https://doi.org/10.1038/s41597-025-06392-9]
+
+The SemanticRail3D dataset is available online on Zenodo and can be cited using the following DOI:
 
 🔗 [https://doi.org/10.5281/zenodo.11143766]
 
