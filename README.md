@@ -171,18 +171,32 @@ The SemanticRail3D-V2 dataset is published on Zenodo and can be cited using the 
 
 ```plaintext
 @dataset{SemanticRail3D,
-  author = {[Soilán, Mario and Ghasemlou, Arshia and Martínez-Sánchez, Joaquín and Pedro, Arias and Lorenzo, Henrique and Riveiro, Belén]},
-  title = {SemanticRail3D: A Benchmark Dataset for Railway Infrastructure Segmentation},
-  year = {2025},
-  version = {v2},
-  doi = {10.5281/zenodo.11143766},
-  publisher = {Zenodo}
+  title={SemanticRail3D: A 3D Point Cloud dataset with semantic annotations of railway environments},
+  author={Ghasemlou, Arshia and Soil{\'a}n, Mario and Mart{\'\i}nez-S{\'a}nchez, Joaqu{\'\i}n and Arias, Pedro and Lorenzo, Henrique and Riveiro, Bel{\'e}n},
+  journal={SemanticRail3D: A 3D Point Cloud dataset with semantic annotations of railway environments},
+  year={2025},
+  publisher={Zenodo}
+}
+```
+```plaintext
+@article{ghasemlou2025semanticrail3d,
+  title={SemanticRail3D-A Mobile LiDAR Benchmark for Semantic and Instance Segmentation of Railway Corridors},
+  author={Ghasemlou, Arshia and Soil{\'a}n, Mario and Riveiro, Bel{\'e}n},
+  journal={Scientific Data},
+  year={2025},
+  publisher={Nature Publishing Group UK London}
 }
 ```
 ----------------------
 
 ### 📌 Related Works
+📄 Journal Article:
+Scientific Data, [DOI: 10.1038/s41597-025-06392-9](https://doi.org/10.1038/s41597-025-06392-9)  
+Title: SemanticRail3D - A Mobile LiDAR Benchmark for Semantic and Instance Segmentation of Railway Corridors
+
+
 The SemanticRail3D dataset is derived from and referenced by the following journal articles:
+
 
 ### 📌 Derived From
 📄 Journal Article:
